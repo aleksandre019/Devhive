@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="40dp"
+        android:contentDescription="@string/todo9" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_naccount"
+        app:layout_constraintTop_toBottomOf="@+id/backButton"
+        app:layout_constraintStart_toStartOf="@+id/backButton"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/hive"
+        android:layout_width="91dp"
+        android:layout_height="88dp"
+        android:layout_margin="40dp"
+        android:src="@drawable/baseline_hive_24"
+        app:layout_constraintEnd_toEndOf="@+id/hiring"
+        app:layout_constraintStart_toStartOf="@+id/opentowork"
+        tools:layout_editor_absoluteY="151dp"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/todo00" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/opentowork"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/button_background_login"
+        android:backgroundTint="@color/white"
+        android:text="@string/open_to_work"
+        android:textSize="10sp"
+        android:textAllCaps="false"
+        android:textColor="#FDD835"
+        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintStart_toStartOf="@+id/editText3"
+        tools:ignore="SmallSp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/hiring"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/button_background"
+        android:text="@string/hiring"
+        android:textAllCaps="false"
+        android:textColor="#FDD835"
+        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="@+id/editText3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Log_in"
+        android:id="@+id/signUpButton"
+        android:background="@drawable/button_background_login"
+        android:textColor="#FDD835"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="false"/>
+    <LinearLayout
+        android:id="@+id/line"
+        app:layout_constraintBottom_toTopOf="@+id/signUpButton"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="10"
+            android:background="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Or"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="10"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/button_background"
+        android:text="@string/Sign_up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/line"
+        app:layout_constraintStart_toStartOf="@+id/line"
+        android:layout_marginBottom="20dp"/>
+
+
+
+    <EditText
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="15dp"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:drawableEnd="@drawable/ic_eye"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/loginpButton"
+        app:layout_constraintStart_toStartOf="@+id/loginpButton"
+        android:autofillHints="" />
+
+    <EditText
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@drawable/baseline_mail_24"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:hint="@string/name"
+        android:inputType="textEmailAddress"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        android:autofillHints="" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

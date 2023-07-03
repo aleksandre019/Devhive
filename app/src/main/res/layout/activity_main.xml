@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background">
+
+
+    <ImageView
+        android:id="@+id/hive"
+        android:layout_width="91dp"
+        android:layout_height="88dp"
+        android:layout_margin="40dp"
+        android:src="@drawable/baseline_hive_24"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo0" />
+
+    <TextView
+        android:id="@+id/DevHive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="350dp"
+        android:text="@string/devhive"
+        android:textColor="#FDD835"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/logInButton"
+        app:layout_constraintEnd_toEndOf="@+id/logInButton"
+        app:layout_constraintStart_toStartOf="@+id/logInButton"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="40dp"
+        android:text="@string/sign_up1"
+        android:textColor="#FDD835"
+        android:textAllCaps="false"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="20dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:text="@string/log_in1"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/signUpButton"
+        app:layout_constraintStart_toStartOf="@id/signUpButton"
+        app:layout_constraintEnd_toEndOf="@id/signUpButton"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:backgroundTint="#FDD835"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:text="@string/take_your_first_steps_nhere"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/logInButton"
+        app:layout_constraintEnd_toEndOf="@+id/logInButton"
+        app:layout_constraintStart_toStartOf="@+id/logInButton"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

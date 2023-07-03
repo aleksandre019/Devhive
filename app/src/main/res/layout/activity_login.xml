@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="40dp"
+        android:contentDescription="@string/todo1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_nback"
+        app:layout_constraintTop_toBottomOf="@+id/backButton"
+        app:layout_constraintStart_toStartOf="@+id/backButton"
+        android:textSize="30sp"
+        android:textColor="#FDD835"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/hive"
+        android:layout_width="131dp"
+        android:layout_height="145dp"
+        android:layout_margin="40dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/baseline_hive_24"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/todo8" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:id="@+id/signUpButton"
+        android:background="@drawable/button_background_login"
+        android:textColor="@color/white"
+        android:backgroundTint="#FDD835"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="false"/>
+    <LinearLayout
+        android:id="@+id/line"
+        app:layout_constraintBottom_toTopOf="@+id/signUpButton"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="10"
+            android:background="#FDD835"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textColor="#FDD835"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="10"
+            android:background="#FDD835"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/button_background"
+        android:text="@string/log_in"
+        android:textAllCaps="false"
+        android:textColor="#FDD835"
+        app:layout_constraintBottom_toTopOf="@+id/line"
+        app:layout_constraintStart_toStartOf="@+id/line"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FDD835"
+        android:text="@string/forgot_password"
+        android:textAllCaps="false"
+        android:textColor="#FDD835"
+        app:layout_constraintBottom_toTopOf="@+id/loginpButton"
+        app:layout_constraintEnd_toEndOf="@+id/loginpButton"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="58dp"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:drawableEnd="@drawable/ic_eye"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/loginpButton"
+        app:layout_constraintStart_toStartOf="@+id/loginpButton" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@drawable/baseline_mail_24"
+        android:drawableEnd="@drawable/baseline_check_24"
+        android:hint="@string/devhive_gmail_com"
+        android:inputType="textEmailAddress"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:textColor="#FDD835"
+        android:textColorHint="#FDD835"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        android:autofillHints="" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

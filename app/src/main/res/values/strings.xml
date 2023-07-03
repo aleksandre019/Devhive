@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Devhive</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_number">enter number</string>
+    <string name="reset_your_password">Reset your password</string>
+    <string name="todo">TODO</string>
+    <string name="welcome_nback">Welcome\nback</string>
+    <string name="sign_up">Sign up</string>
+    <string name="or">Or</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="log_in">Log in</string>
+    <string name="password">Password</string>
+    <string name="devhive_gmail_com">devhive@gmail.com</string>
+    <string name="todo8">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="devhive">.DevHive.</string>
+    <string name="sign_up1">Sign up</string>
+    <string name="log_in1">Log in</string>
+    <string name="take_your_first_steps_nhere">Take your first steps\nhere...</string>
+    <string name="todo0">TODO</string>
+    <string name="create_naccount">Create\nAccount</string>
+    <string name="open_to_work">Open to work</string>
+    <string name="hiring">hiring</string>
+    <string name="Log_in">Log in</string>
+    <string name="Sign_up">Sign up</string>
+    <string name="Password">Password</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="Or">Or</string>
+    <string name="todo00">TODO</string>
+    <string name="todo9">TODO</string>
+    <string name="john_black">John Black</string>
+    <string name="i_have_basic_knowledge_of_java_css_html">I have basic knowledge of Java, CSS, HTML...</string>
+    <string name="junior_developer">junior developer</string>
+</resources>

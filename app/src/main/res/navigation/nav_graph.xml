@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.devhive.mainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <action
+        android:id="@+id/action_main_fragment_to_login_Fragment"
+        app:destination="@+id/login_Fragment"/>
+    <action
+        android:id="@+id/action_main_fragment_to_signupFragment"
+        app:destination="@+id/signup_Fragment"/>
+    <fragment
+        android:id="@+id/login_Fragment"
+        android:name="com.example.devhive.Login_Fragment"
+        android:label="fragment_login_"
+        tools:layout="@layout/fragment_login_" />
+    <action
+        android:id="@+id/action_loginFragment_to_userlistFragment"
+        app:destination="@+id/userlistFragment"
+        />
+    <action
+        android:id="@+id/action_signupFragment_to_itemlistFragment"
+        app:destination="@+id/itemlistFragment"/>
+    <action
+        android:id="@+id/action_login_fragment_to_forgotpasswordFragment"
+        app:destination="@+id/forgotpasswordFragment"/>
+
+    <fragment
+        android:id="@+id/signup_Fragment"
+        android:name="com.example.devhive.signup_Fragment"
+        android:label="fragment_signup_"
+        tools:layout="@layout/fragment_signup_" />
+    <action
+        android:id="@+id/action_signupFragment_to_mainFragment"
+        app:destination="@+id/mainFragment"/>
+
+    <fragment
+        android:id="@+id/userlistFragment"
+        android:name="com.example.devhive.userlistFragment"
+        android:label="fragment_userlist"
+        tools:layout="@layout/fragment_userlist" />
+    <argument
+        android:name="name"
+        app:argType="string" />
+    <argument
+        android:name="description"
+        app:argType="string" />
+    <fragment
+        android:id="@+id/itemlistFragment"
+        android:name="com.example.devhive.itemlistFragment"
+        android:label="fragment_itemlist"
+        tools:layout="@layout/fragment_itemlist" />
+    <argument
+        android:name="name"
+        app:argType="string" />
+    <argument
+        android:name="description"
+        app:argType="string" />
+    <fragment
+        android:id="@+id/forgotpasswordFragment"
+        android:name="com.example.devhive.forgotpasswordFragment"
+        android:label="fragment_forgotpassword"
+        tools:layout="@layout/fragment_forgotpassword" />
+    <action
+        android:id="@+id/action_forgotpasswordFragment_to_login_Fragment"
+        app:destination="@+id/login_Fragment"/>
+    <argument
+        android:name="description"
+        app:argType="string" />
+</navigation>
+
